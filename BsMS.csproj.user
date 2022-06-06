@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="WindowsForms\Cadastros\CadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Cadastros\CadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Cadastros\CadastroFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Editar\EditarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Editar\EditarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Editar\EditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Itens\CadastrarItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Controle\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Controle\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Itens\EditarItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Itens\RemoverItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Vendas\CriarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Vendas\EditarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForms\Vendas\RemoverVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
