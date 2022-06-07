@@ -17,12 +17,5 @@ namespace BsMS
             Application.Run(new Login());
         }
 
-        public class AddUsuario : Admin
-        {
-            public AddUsuario(string nome, string senha) : base(nome, senha)
-            {
-
-            }
-        }
     }
 }

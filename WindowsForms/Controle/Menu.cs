@@ -1,4 +1,7 @@
-﻿using BsMS.WindowsForms;
+﻿using BsMS.Classes;
+using BsMS.Data;
+using BsMS.Repository;
+using BsMS.WindowsForms;
 using BsMS.WindowsForms.Itens;
 using BsMS.WindowsForms.Vendas;
 using System;
@@ -24,10 +27,20 @@ namespace BsMS
         {
             Application.Exit();
         }
+        
+        public IRepository<Itens>? _itensRepository;
+
+        private void InicializarFormulario()
+        {
+            _itensRepository = new ItensRepository(new EFDataContext());
+        }
 
         private void Menu_Load(object sender, EventArgs e)
         {
             label1.Text =  "usuario";
+            InicializarFormulario();
+            var Lista = _itensRepository.ObterTodos();
+            dataGridView1.DataSource = Lista;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -146,6 +159,16 @@ namespace BsMS
         {
             var telaRemoverVenda = new RemoverVenda();
             telaRemoverVenda.Show();
+        }
+
+        private void itensBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
